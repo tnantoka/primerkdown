@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Primerkdown</title>
+  <!--
+  <link rel="stylesheet" href="bower_components/primer-css/css/primer.css">
+  <link rel="stylesheet" href="bower_components/octicons/octicons/octicons.css">
+  -->
+  <link rel="stylesheet" href="docs.css"><!-- http://primercss.io/docs.css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="masthead swatch-gray">
+    <div class="container">
+      <a class="masthead-logo" href="/">
+        <span class="mega-octicon octicon-book"></span>
+        Primerkdown
+      </a>
+
+      <nav class="masthead-nav">
+        <a href="http://qiita.com/tnantoka/items/f8daee0b8e747f0f6643">About</a>
+        <a href="https://github.com/tnantoka/primerkdown">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="docs-example">
+    <div class="container">
+      <div class="flash flash-warn flash-with-icon hidden js-flash-save">
+        <div class="flash-close">
+          <span class="octicon octicon-x js-flash-close"></span>
+        </div>
+        <span class="octicon octicon-alert"></span>
+        TODO
+      </div>
+
+      <div class="flash hidden js-flash-clear">
+        <span class="octicon octicon-x flash-close js-flash-close"></span>
+        Cleared.
+      </div>
+
+      <form>
+        <div class="columns docs-layout">
+          <div class="one-half column">
+            <dl class="form">
+              <dt><label>Markdown</label></dt>
+              <dd><textarea class="js-markdown"></textarea></dd>
+            </dl>
+          </div>
+          <div class="one-half column">
+            <dl class="form">
+              <dt><label>Preview</label></dt>
+              <dd class="markdown-body js-preview">
+                <div class="blankslate">
+                  <span class="mega-octicon octicon-info"></span>
+                  <h3>No content</h3>
+                  <p>Please input something.</p>
+                </div>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="button" class="btn btn-primary js-save">Save</button>
+          <button type="button" class="btn js-clear">Clear</button>
+        </div>
+      </form>
+      <footer class="footer">
+        Created by <a href="https://twitter.com/tnantoka">@tnantoka</a>.
+        <br>
+        Built on <a href="http://primercss.io/" target="_blank">Primer</a>.
+      </footer>
+    </div>
+  </div>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/autosize/dest/autosize.min.js"></script>
+  <script src="bower_components/marked/lib/marked.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

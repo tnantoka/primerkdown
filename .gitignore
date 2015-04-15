@@ -1,0 +1,10 @@
+# Mac
+.DS_Store
+
+# Vim
+*~
+.*.sw*
+
+# Bower
+#bower_components
+
